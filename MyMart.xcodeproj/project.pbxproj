@@ -12,6 +12,7 @@
 		0A77872B21A4EBBC0067D569 /* MyMart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A77872921A4EBBC0067D569 /* MyMart.xcdatamodeld */; };
 		0A77872D21A4EBBE0067D569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A77872C21A4EBBE0067D569 /* Assets.xcassets */; };
 		0A77873021A4EBBE0067D569 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A77872E21A4EBBE0067D569 /* LaunchScreen.storyboard */; };
+		F9405D5DB7BCA906975C531A /* Pods_MyMart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614AAF95CA11E65AC24206D5 /* Pods_MyMart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0A77872C21A4EBBE0067D569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A77872F21A4EBBE0067D569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A77873121A4EBBE0067D569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		614AAF95CA11E65AC24206D5 /* Pods_MyMart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA747D9BF9668E5D212DEA8 /* Pods-MyMart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMart.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMart/Pods-MyMart.release.xcconfig"; sourceTree = "<group>"; };
+		DA77C20527673E050EB5A6B1 /* Pods-MyMart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMart/Pods-MyMart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9405D5DB7BCA906975C531A /* Pods_MyMart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0A77872121A4EBBC0067D569 /* MyMart */,
 				0A77872021A4EBBC0067D569 /* Products */,
+				4DAC1F67398B9EE478F07755 /* Pods */,
+				27A41C611B6F1B6ACC6B2552 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = MyMart;
 			sourceTree = "<group>";
 		};
+		27A41C611B6F1B6ACC6B2552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				614AAF95CA11E65AC24206D5 /* Pods_MyMart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DAC1F67398B9EE478F07755 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA77C20527673E050EB5A6B1 /* Pods-MyMart.debug.xcconfig */,
+				8DA747D9BF9668E5D212DEA8 /* Pods-MyMart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A77873421A4EBBE0067D569 /* Build configuration list for PBXNativeTarget "MyMart" */;
 			buildPhases = (
+				FBA38B1DE0EE91E9C45A01C2 /* [CP] Check Pods Manifest.lock */,
 				0A77871B21A4EBBC0067D569 /* Sources */,
 				0A77871C21A4EBBC0067D569 /* Frameworks */,
 				0A77871D21A4EBBC0067D569 /* Resources */,
+				30D2FC026FFA52937BB56C5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30D2FC026FFA52937BB56C5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyMart/Pods-MyMart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMart/Pods-MyMart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA38B1DE0EE91E9C45A01C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A77871B21A4EBBC0067D569 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		0A77873521A4EBBE0067D569 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA77C20527673E050EB5A6B1 /* Pods-MyMart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		0A77873621A4EBBE0067D569 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA747D9BF9668E5D212DEA8 /* Pods-MyMart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
