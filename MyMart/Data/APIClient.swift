@@ -13,7 +13,7 @@ typealias FilmListJSON = [String:Any]
 struct APIClient {
     
     static func getFilmListAPI(completion : @escaping (FilmListJSON?) -> Void){
-        let url = URL(string: "https://rss.itunes.apple.com/api/v1/id/movies/top-movies/all/25/explicit.json")
+        let url = URL(string: "https://rss.itunes.apple.com/api/v1/id/movies/top-movies/all/10/explicit.json")
         
         let session = URLSession.shared
         

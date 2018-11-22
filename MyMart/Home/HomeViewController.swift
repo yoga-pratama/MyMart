@@ -13,14 +13,28 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     
     
     @IBOutlet var collectionView: UICollectionView!
+    let actvt = UIActivityIndicatorView(style: .gray)
     let store = DataStore.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let collectionViewLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
+        collectionViewLayout?.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        collectionViewLayout?.invalidateLayout()
+        
+        view.addSubview(actvt)
+        // Set up its size (the super view bounds usually)
+        actvt.frame = view.bounds
+        // Start the loading animation
+        actvt.startAnimating()
+
+        
         store.getFilmPoster {
+            self.actvt.removeFromSuperview()
             self.collectionView.reloadSections(IndexSet(integer: 0))
         }
+        
         // Do any additional setup after loading the view.
     }
     
@@ -34,7 +48,10 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         
         print(store.images[indexPath.row])
         cell.displayContent(image : store.images[indexPath.row] , title : film.name)
-    
+       cell.moviePoster.layer.cornerRadius = 10
+       cell.moviePoster.clipsToBounds = true
+        
+        
         return cell
     }
     

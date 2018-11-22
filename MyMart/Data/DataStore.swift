@@ -16,9 +16,11 @@ final class DataStore{
     var filmlists : [FilmList] = []
     var images: [UIImage] = []
    
+    
     func getFilm(completion: @escaping () -> Void){
         APIClient.getFilmListAPI{ (json) in
              print("getting data")
+           
             let feed = json?["feed"] as? FilmListJSON
             if let results = feed?["results"] as? [FilmListJSON]{
                 for dict in results{
