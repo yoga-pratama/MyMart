@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A068CBF21A649D600B1C76F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A068CBE21A649D600B1C76F /* DataStore.swift */; };
 		0A4BE5FA21A5055B005967AB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BE5F921A5055B005967AB /* TabBarViewController.swift */; };
 		0A4BE5FC21A53809005967AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BE5FB21A53809005967AB /* HomeViewController.swift */; };
 		0A4BE5FE21A54080005967AB /* FilmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BE5FD21A54080005967AB /* FilmList.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A068CBE21A649D600B1C76F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		0A4BE5F921A5055B005967AB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0A4BE5FB21A53809005967AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0A4BE5FD21A54080005967AB /* FilmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmList.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				0A4BE5FB21A53809005967AB /* HomeViewController.swift */,
 				0A4BE5FD21A54080005967AB /* FilmList.swift */,
 				0A4BE5FF21A5422D005967AB /* APIClient.swift */,
+				0A068CBE21A649D600B1C76F /* DataStore.swift */,
 			);
 			path = MyMart;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A068CBF21A649D600B1C76F /* DataStore.swift in Sources */,
 				0A77872B21A4EBBC0067D569 /* MyMart.xcdatamodeld in Sources */,
 				0A4BE5FE21A54080005967AB /* FilmList.swift in Sources */,
 				0A4BE5FA21A5055B005967AB /* TabBarViewController.swift in Sources */,
