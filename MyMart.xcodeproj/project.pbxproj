@@ -18,6 +18,7 @@
 		0A77872B21A4EBBC0067D569 /* MyMart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A77872921A4EBBC0067D569 /* MyMart.xcdatamodeld */; };
 		0A77872D21A4EBBE0067D569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A77872C21A4EBBE0067D569 /* Assets.xcassets */; };
 		0A77873021A4EBBE0067D569 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A77872E21A4EBBE0067D569 /* LaunchScreen.storyboard */; };
+		0ACF94B621A7DE29009DC855 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF94B521A7DE29009DC855 /* SearchViewController.swift */; };
 		F9405D5DB7BCA906975C531A /* Pods_MyMart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614AAF95CA11E65AC24206D5 /* Pods_MyMart.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		0A77872C21A4EBBE0067D569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A77872F21A4EBBE0067D569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A77873121A4EBBE0067D569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ACF94B521A7DE29009DC855 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		614AAF95CA11E65AC24206D5 /* Pods_MyMart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA747D9BF9668E5D212DEA8 /* Pods-MyMart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMart.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMart/Pods-MyMart.release.xcconfig"; sourceTree = "<group>"; };
 		DA77C20527673E050EB5A6B1 /* Pods-MyMart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMart/Pods-MyMart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				0A068CC221A6878B00B1C76F /* Home */,
 				0A77872221A4EBBC0067D569 /* AppDelegate.swift */,
 				0A77872621A4EBBC0067D569 /* Main.storyboard */,
+				0ACF94B521A7DE29009DC855 /* SearchViewController.swift */,
 				0A77872C21A4EBBE0067D569 /* Assets.xcassets */,
 				0A77872E21A4EBBE0067D569 /* LaunchScreen.storyboard */,
 				0A77873121A4EBBE0067D569 /* Info.plist */,
@@ -245,6 +248,7 @@
 				0A068CBF21A649D600B1C76F /* DataStore.swift in Sources */,
 				0A77872B21A4EBBC0067D569 /* MyMart.xcdatamodeld in Sources */,
 				0A4BE5FE21A54080005967AB /* FilmList.swift in Sources */,
+				0ACF94B621A7DE29009DC855 /* SearchViewController.swift in Sources */,
 				0A4BE5FA21A5055B005967AB /* TabBarViewController.swift in Sources */,
 				0A068CC121A6875F00B1C76F /* ListFilmCollectionViewCell.swift in Sources */,
 				0A77872321A4EBBC0067D569 /* AppDelegate.swift in Sources */,

@@ -13,6 +13,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     
     
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var searchText : UITextField!
     let actvt = UIActivityIndicatorView(style: .gray)
     let store = DataStore.sharedInstance
 
@@ -22,6 +23,10 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         let collectionViewLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         collectionViewLayout?.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         collectionViewLayout?.invalidateLayout()
+        
+      //  searchText.leftView = UIImageView(image : UIImage.fontAwesomeIcon(name: .search, style: .solid, textColor: UIColor.black, size: CGSize(width: 20 , height: 20)))
+        
+        searchText.setLeftView(imageName: "view")
         
         view.addSubview(actvt)
         // Set up its size (the super view bounds usually)
@@ -55,7 +60,12 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         return cell
     }
     
-
+    @IBAction func OnTouchText(_ sender: UITextField) {
+        print("enter.....")
+        performSegue(withIdentifier: "homesearchSegue", sender: self)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -66,4 +76,15 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     }
     */
 
+}
+
+extension UITextField{
+    
+    func setLeftView(imageName: String){
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20 ))
+        imageView.image = UIImage.fontAwesomeIcon(name: .search, style: .solid, textColor: UIColor.gray, size: CGSize(width: 20 , height: 20))
+        self.leftView = imageView
+        self.leftViewMode = .always
+    }
+    
 }
